@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .form{
+         display: inline-block;
+         position:absolute;
+         margin: auto;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 500px;
+         height: 500px;
+        }
+    </style>
+</head>
+<body>
+<!-- Create a sign-up and sign-in page with proper validaton
+a. Sign up form should have a first name, lastt name, email password, confirm password, age, gender,
+and agree to terms and conditions fields at minimum (You can add any other if you like.
+<a Sign in form  should have email and password fields -->
+    <div class="form">
+            <form action="" method="post">
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required minlength="3"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required minlength="3"><br>
+                <label for="age">age:</label><br>
+                <input type="number" name="age" id="" min="0" max="150"><br>
+                <label for="">gender:</label>
+                <label for="gender">male</label>
+                <input type="radio" name="gender" id="">
+                <label for="gebder">female</label>
+                <input type="radio" name="gender" id=""><br>
+                <label for="email">email:</label><br>
+                <input type="email" name="email" id=""><br>
+                <label for="password">password:</label><br>
+                <input type="password" name="password" id="" required minlength="8"><br>
+                <label for="cpass">confirm password:</label><br>
+                <input type="password" name="cpass" id="" minlength="8"><br>
+                <input type="checkbox" name="t&c" id="">
+                <label for="t&c">Terms And conditions</label><br>
+                <input type="checkbox" name="news" id="">
+                <label for="news">Do you wish to get Newsfeeds</label><br>
+                <button type="submit">sign up</button>
+            </form>
+    </div>
+</body>
+</html>
