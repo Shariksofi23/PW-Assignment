@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 30px;
+        }
+        main {
+          margin-top: 20px;
+        }
+        section {
+          margin-bottom: 20px;
+        }
+        h2 {
+          color: #333;
+        }
+        #myCanvas{
+            width: 400; height: 200px; border: solid,1px,000;
+        }
+      </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Exploring HTML5 Features</h1>
+      </header>
+      
+      <main>
+        <section>
+          <h2>Feature 1: &lt;canvas&gt;</h2>
+          <p>HTML5 introduced the &lt;canvas&gt; element, which provides a way to draw graphics, animations, and visualizations on a web page using JavaScript.</p>
+          <canvas id="myCanvas"></canvas>
+          <script>
+            // Drawing a simple shape on the canvas
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'green';
+            ctx.fillRect(50, 50, 100, 100);
+          </script>
+        </section>
+    
+        <section>
+          <h2>Feature 2: &lt;video&gt; and &lt;audio&gt;</h2>
+          <p>HTML5 introduced native support for embedding video and audio content without the need for third-party plugins. Here's an example of an embedded video:</p>
+          <video width="400" controls>
+            <source src="Dummy Video For Website.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
+    
+        <section>
+          <h2>Feature 3: Geolocation API</h2>
+          <p>HTML5 introduced the Geolocation API, allowing websites to access a user's geographical location. However, for security reasons, access to the user's location requires their permission.</p>
+          <button onclick="getLocation()">Get My Location</button>
+          <p id="demo"></p>
+          <script>
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else {
+                document.getElementById('demo').innerHTML = 'Geolocation is not supported by this browser.';
+              }
+            }
+            
+            function showPosition(position) {
+              document.getElementById('demo').innerHTML = 'Latitude: ' + position.coords.latitude + '<br>Longitude: ' + position.coords.longitude;
+            }
+          </script>
+        </section>
+      </main>
+    
+      <footer>
+        <p>&copy; 2023 HTML5 Features Showcase</p>
+      </footer>
+        <h4>Certainly! Below is an example of a simple web page that highlights three key features of HTML5 using appropriate semantic tags for structure html</h4>
+<h3>This example showcases three key HTML5 features:</h3>
+
+1. <b>Canvas Element</b>: Demonstrates the usage of the `< canvas >` element to draw a simple rectangle. <br>
+2. <b>Video Element</b>: Embeds a sample video using the `< video >` element, showcasing native video support in HTML5. <br>
+3. <b>Geolocation API</b>: Includes a button that retrieves the user's current location using the Geolocation API. <br>
+
+Feel free to adjust the content, styles, and functionalities to suit your preferences or specific use cases.
+      </p>
+</body>
+</html>
