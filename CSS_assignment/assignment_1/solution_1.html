@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="solution_1.css">
+    <style>
+        .internal{
+            color: blueviolet;
+        }
+        .internal_external{
+            color: green ;
+        }
+        .inline_internal{
+            color: purple;
+        }
+        .i_i_e{
+        color: red ;
+        }
+    </style>
+</head>
+<body>
+    <!-- div for inline css -->
+    <div class="inline" style="color: brown;"> this is inline css</div>
+    <!-- div for internal css -->
+    <div class="internal"> this is internal css</div>
+    <!-- div for ectrenal css -->
+    <div class="external"> this is external css</div>
+    <!-- this div has taken style from inline css -->
+    <div class="inline_internal" style="color: yellow;"> this is inline versus internal css</div>
+     <!-- this div has taken the style from intrnal css -->
+    <div class="internal_external"> this is internal versus external css</div>
+    <!-- this div has taken the style from inline css -->
+    <div class="i_i_e" style="color: darkolivegreen;"> this in inline vs internal versus external css</div>
+</body>
+</html>

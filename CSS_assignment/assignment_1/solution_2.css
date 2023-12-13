@@ -1,0 +1,22 @@
+h1,h2{
+    text-align: center;
+    text-decoration:underline ;
+}
+.introduction{
+    background-color: black;
+    color: white;
+    font: bolder;
+    font-size: larger;
+}
+.causes{
+    background-color: bisque;
+    color: black;
+    font: bolder;
+    font-size: larger;
+}
+.effects{
+    background-color: yellow;
+    color: red;
+    font: bolder;
+    font-size: larger;
+}

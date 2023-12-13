@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>.form{
+        display: inline-block;
+        position:absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 500px;
+        height: 500px;
+       }
+    .first_name{
+        background-color: red;
+    }
+    .last_name{
+        background-color: yellow;
+    }
+    .email{
+        background-color:blue;
+    }
+    .password{
+        background-color: orange;
+    }
+    /* password and confirm password have same orange color but with different opacity */
+    .confirm_password{
+        background-color:  orange;
+        opacity: 50%;
+    }</style>
+
+</head>
+<body>
+    <div class="form">
+            <form action="" method="post">
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required minlength="3" placeholder="name" class="first_name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required minlength="3" placeholder="last name" class="last_name"><br>
+                <label for="age">age:</label><br>
+                <input type="number" name="age" id="" min="0" max="150"><br>
+                <label for="">gender:</label>
+                <label for="gender">male</label>
+                <input type="radio" name="gender" id="">
+                <label for="gebder">female</label>
+                <input type="radio" name="gender" id=""><br>
+                <label for="email">email:</label><br>
+                <input type="email" name="email" id="" placeholder="email" class="email"><br>
+                <label for="password">password:</label><br>
+                <input type="password" name="password" id="" required minlength="8" placeholder="password" class="password"><br>
+                <label for="cpass">confirm password:</label><br>
+                <input type="password" name="cpass" id="" minlength="8" placeholder="confirm" class="confirm_password"><br>
+                <input type="checkbox" name="t&c" id="">
+                <label for="t&c">Terms And conditions</label><br>
+                <input type="checkbox" name="news" id="">
+                <label for="news">Do you wish to get Newsfeeds</label><br>
+                <button type="submit">sign up</button>
+            </form>
+    </div>
+</body>
+</html>
