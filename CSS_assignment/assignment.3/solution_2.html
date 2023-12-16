@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+           
+        }
+        table{
+            text-align: center;
+            border: 2px solid black;
+            min-width: 70vh;
+            max-width: 100vh;
+            font-size: large;
+        }
+        th{
+            background-color: steelblue;
+            color: white;
+            text-decoration: underline;
+        }
+        td,th{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+            Relative Positioning:
+        </th>
+          <th>
+        Absolute Positioning:
+          </th>
+        </tr>
+        <tr>
+            <td>
+                With relative positioning, an element is positioned relative to its normal position on the web page. It moves from its default position based on the offsets specified.
+            </td>
+            <td>
+                Absolute positioning positions an element relative to its nearest positioned ancestor (an ancestor that has a position value other than static) or to the initial containing block if no positioned ancestor is found.
+            </td>
+        </tr>
+        <tr>
+            <td>The element maintains its space in the document flow even after applying offsets. Other elements on the page still recognize its original position.</td>
+            <td>The element is taken out of the normal document flow, and other elements on the page act as though it doesn't exist, which can lead to overlapping if not managed properly.</td>
+        </tr>
+        <tr>
+            <td> The element's position is relative to itself. When offsets (like top, right, bottom, left) are applied, the element moves relative to its default position.</td>
+            <td> The element's position is relative to its closest positioned ancestor (with a position value other than static). If no such ancestor exists, it's positioned relative to the initial containing block (usually the <body> element).</td>
+        </tr>
+        <tr>
+            <td>.element {
+                position: relative;
+                /* Other positioning properties like top, right, bottom, left can be used */
+              }
+              </td>
+            <td>.element {
+                position: absolute;
+                /* Use top, right, bottom, left to position the element */
+              }
+              </td>
+        </tr>
+    </table>
+</body>
+</html>

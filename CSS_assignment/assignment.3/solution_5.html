@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /* Basic styling */
+.box {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Different background colors for boxes */
+.box1 {
+  background-color: #3498db;
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+}
+
+.box2 {
+  background-color: #2ecc71;
+  z-index: 2; 
+  top: 50px; 
+  left: 50px;
+}
+
+.box3 {
+  background-color: #e74c3c;
+  z-index: 1;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <p>z-index` is a CSS property that controls the stacking order of elements on a webpage along the z-axis (depth). It specifies the order in which elements are displayed, allowing you to control which elements appear in front of or behind other elements. The higher the `z-index` value, the closer the element is to the front.</p>
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+
+
+      <p>
+In this example:
+- Three `div` elements with the class `.box` are created in the HTML file.
+- Each box has different background colors and a different `z-index` value set in the CSS file.
+- The `z-index` values determine the stacking order. Box 2 has the highest `z-index` value (2), so it will appear above Box 1 (z-index of 1), and Box 3 (z-index of 0) will appear behind both Box 1 and Box 2.
+
+Adjusting the `z-index` values will change the stacking order of the boxes on the webpage. Remember that `z-index` only works on positioned elements (elements with a `position` property set to anything other than `static`, such as `relative`, `absolute`, or `fixed`).
+      </p>
+    
+    
+</body>
+</html>
