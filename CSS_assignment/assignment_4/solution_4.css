@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* css for main section */
+.main{
+    width: Fixed (962px);
+height: Hug (427px);
+top: 25px;
+left: -8px;
+padding: 32px, 48px, 32px, 48px;
+gap: 32px;
+background: #F4F2FD;
+display: flex;
+justify-content: center;
+box-sizing: border-box;
+}
+/* card 1 css */
+.card1{
+    width: Fixed (262px);
+height: Fixed (363px);
+padding: 32px;
+border-radius: 8px;
+gap: 32px;
+background: #FFFFFF;
+box-shadow: 0px 1px 10px 0px #00000040;
+color: #202842;
+}
+.b1{
+    width: Hug (156px);
+height: Hug (38px);
+padding: 8px, 24px, 8px, 24px;
+border-radius: 50px;
+gap: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.c1{
+    width: 112px;
+height: 27px;
+padding: 3px;
+font-family: Nunito;
+font-size: 16px;
+font-weight: 100;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+background: #202842;
+color: #FFFFFF;
+border-radius: 24px;
+border-color: transparent;
+}
+/* card 2 css */
+.card2{
+    width: Fixed (262px);
+height: Fixed (363px);
+padding: 32px;
+border-radius: 8px;
+background-color: #202842;
+gap: 32px;
+box-shadow: 0px 1px 10px 0px #00000040;
+color: #ffffff;
+}
+.b2{
+    width: Hug (156px);
+height: Hug (38px);
+padding: 8px, 24px, 8px, 24px;
+border-radius: 50px;
+gap: 10px;
+
+display: flex;
+justify-content: center;
+}
+.c2{
+    width: 112px;
+    height: 27px;
+    padding: 3px;
+    font-family: Nunito;
+font-size: 16px;
+font-weight: 100;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+background: #FFFFFF;
+color: #202842;   
+border-radius: 24px;
+border-color: transparent;
+}
+/* card3 css */
+.card3{
+    width: Fixed (263px);
+height: Fixed (361px);
+padding: 32px;
+border-radius: 8px;
+gap: 32px;
+background: #FFFFFF;
+box-shadow: 0px 1px 10px 0px #00000040;
+color: #202842;
+}
+.b3{
+    width: Hug (156px);
+    height: Hug (38px);
+    padding: 8px, 24px, 8px, 24px;
+    border-radius: 50px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    }
+    .c3{
+        width: 112px;
+    height: 27px;
+    padding: 3px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #202842;
+    color: #ffffff;
+    border-radius: 24px;
+    border-color: transparent;
+    }
+button:hover{
+    color: red;
+}
