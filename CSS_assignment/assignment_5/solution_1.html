@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 250px);
+        }
+        #box_one{
+            background-color: black;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } #box_two{
+            background-color: green;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        } #box_three{
+            background-color: orange;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        } #box_four{
+            background-color: grey;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } #box_five{
+            background-color: purple;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+         #box_six{
+            background-color: red;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="box_one"><img src="https://th.bing.com/th/id/R.00237e5e7d975b45307a88afa556f9ad?rik=x7eXZla8YuFqSw&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2ffacebook-cover-balloons-sunset-view-facebook-cover.jpg&ehk=MKBwru39fZ5J46RF3AJ9YPGMLx2eR%2fMHlwn9UAkok5s%3d&risl=&pid=ImgRaw&r=0" alt="image"></div>
+        <div class="item" id="box_two"><img src="https://th.bing.com/th/id/OIP.ewRfMU-58Iustx-NiDinuAHaEo?rs=1&pid=ImgDetMain" alt="IMAGE"></div>
+        <div class="item" id="box_three"><img src="https://th.bing.com/th/id/OIP.A6JMfEapYHHudi7PZa39IwHaLH?w=640&h=960&rs=1&pid=ImgDetMain" alt="image"></div>
+        <div class="item" id="box_four"><img src="https://mytechshout.com/wp-content/uploads/2014/10/sunrise-facebook-cover.jpg" alt="image"></div>
+        <div class="item" id="box_five"><img src="https://th.bing.com/th/id/OIP.ibgSg8mOUDWb40MgRnioDQHaLH?w=600&h=900&rs=1&pid=ImgDetMain" alt="image"></div>
+        <div class="item" id="box_six"><img src="https://i.ytimg.com/vi/gIeW6UZK2e0/maxresdefault.jpg" alt="image"></div>
+    </div>
+</body>
+</html>

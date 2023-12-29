@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px; /* Explicitly defining two columns */
+  grid-auto-rows: 50px; /* Setting the height for implicitly created rows */
+  grid-auto-columns: 80px; /* Setting the width for implicitly created columns */
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <p>grid-auto-rows and grid-auto-columns are properties used in CSS Grid Layout to define the size of rows and columns that are implicitly created by the grid but not explicitly defined. These properties are useful when grid items overflow the explicitly defined grid rows or columns.</p>
+    <p>Here's an example to illustrate the use of grid-auto-rows and grid-auto-columns:</p>
+    <p>
+        <div class="grid-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+          </div>
+          
+        <h4>HTML</h4>
+    <pre>
+        < div class="grid-container" >
+        < div class="item">1< /div >
+        < div class="item">2< /div >
+        < div class="item">3< /div >
+        < div class="item">4</div >
+      < /div >
+      </pre>
+      <h4>CSS</h4>
+      <pre>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px; /* Explicitly defining two columns */
+            grid-auto-rows: 50px; /* Setting the height for implicitly created rows */
+            grid-auto-columns: 80px; /* Setting the width for implicitly created columns */
+            grid-gap: 10px;
+          }
+          
+          .item {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+          }
+          
+      </pre>
+      </p>
+      <p>In this example, the `.grid-container` creates a grid layout with two explicitly defined columns of 100px width each (`grid-template-columns: 100px 100px`). However, it contains four `.item` elements, which exceeds the explicitly defined columns. <br>
+
+The `grid-auto-rows: 50px` property sets the height of implicitly created rows to be 50px, and `grid-auto-columns: 80px` sets the width of implicitly created columns to be 80px. <br>
+
+As a result, the first two items (1 and 2) will fit perfectly within the explicitly defined columns, but items 3 and 4 will create additional rows and columns implicitly due to the lack of space in the defined grid. These additional rows will have a height of 50px, and the additional columns will have a width of 80px. <br>
+
+This enables the grid to adapt to accommodate the overflowing items by creating new rows and columns with the specified dimensions for the items that do not fit within the explicitly defined grid structure. <br>
+
+Adjust the values of `grid-auto-rows` and `grid-auto-columns` according to your layout requirements to see how they affect the grid's behavior when items overflow the explicitly defined grid. <br>
+      </p>
+</body>
+</html>

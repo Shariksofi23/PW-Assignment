@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-items: center; /* Aligns all grid items horizontally (inline axis) */
+}
+
+.item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.item1 {
+  justify-self: start; /* Aligns this specific item to the start along the row axis */
+}
+
+.item2 {
+  justify-self: center; /* Aligns this specific item to the center along the row axis */
+}
+
+.item3 {
+  justify-self: end; /* Aligns this specific item to the end along the row axis */
+}
+
+    </style>
+</head>
+<body>
+    <P> justify-items and justify-self are CSS properties used in CSS Grid Layout to align grid items within their grid container, but they work at different levels.</P>
+    <ol>
+        <li>justify-items: This property is used to align all the grid items within the grid container along the inline (row) axis.</li>
+        <li>justify-self: This property is used to align a single grid item within its own grid cell along the inline (row) axis.</li>
+    </ol>
+    <h4>Here's an example to illustrate the difference between justify-items and justify-self:</h4>
+    <div class="grid-container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+      </div>
+      
+    <p>HTML
+        <pre>
+            < div class="grid-container">
+                < div class="item item1">1 < /div >
+                < div class="item item2">2< /div>
+                < div class="item item3">3< /div>
+              < /div>
+              
+        </pre>
+    </p>
+    <p>CSS
+        <pre>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 100px);
+                grid-gap: 10px;
+                justify-items: center; /* Aligns all grid items horizontally (inline axis) */
+              }
+              
+              .item {
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                padding: 20px;
+              }
+              
+              .item1 {
+                justify-self: start; /* Aligns this specific item to the start along the row axis */
+              }
+              
+              .item2 {
+                justify-self: center; /* Aligns this specific item to the center along the row axis */
+              }
+              
+              .item3 {
+                justify-self: end; /* Aligns this specific item to the end along the row axis */
+              }
+              
+        </pre>
+    </p>
+    <h4>In this example:</h4>
+   <ul>
+    <li>.grid-container creates a grid layout with three columns each of 100px width and a 10px gap.</li>
+    <li>.grid-container creates a grid layout with three columns each of 100px width and a 10px gap.</li>
+   </ul>
+   <h4>However, for each individual item:</h4>
+   <ul>
+    <li>.item1 has justify-self: start;, which aligns it to the start (left) of its grid cell along the row axis.</li>
+    <li>.item2 has justify-self: center;, aligning it to the center of its grid cell along the row axis.</li>
+    <li>.item3 has justify-self: end;, aligning it to the end (right) of its grid cell along the row axis.</li>
+   </ul>
+   <h2>justify-items affects all grid items uniformly within the grid container, </h2>
+   <h2> justify-self allows you to individually control the alignment of specific items within their respective grid cells.</h2>
+</body>
+</html>
