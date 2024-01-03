@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+           grid-template-columns: 1fr;
+           gap: 10px;
+           min-height: 100vh;
+        }
+        .box{
+            text-align: center;
+            font-size: x-large;
+            font-weight: 600;
+            padding:40px ;
+        }
+        .box_one{
+            background-color: red;
+        }  .box_two{
+            background-color: green;
+        }
+        .box_three{
+            background-color: blue;
+        }
+        .box_four{
+            background-color: orange;
+        }
+        @media  screen and (min-width:768px) {
+
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box_one">one</div>
+        <div class="box box_two">two</div>
+        <div class="box box_three">three</div>
+        <div class="box box_four">four</div>
+    </div>
+</body>
+</html>
