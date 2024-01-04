@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+         --primary-color:#00b7ff;
+         --secondary-color:#6c757d;
+        }
+       button{
+        padding: 5px;
+        margin: 8px;
+        font-weight: 900;
+        border-radius: 10px;
+        border: 2px solid black;
+       }
+       #primaryBtn{
+        background-color: var(--primary-color);
+        color: red;
+       }
+       #secondaryBtn{
+        background-color: var(--secondary-color);
+        color: red;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>var function</h1>
+    <p>
+        In CSS, the var() function is used to define and apply custom properties, allowing you to store and reuse values throughout your stylesheet. It enables the creation of variables (custom properties) that can hold various types of values such as colors, sizes, font stacks, or any other valid CSS value.</p>
+        <button id="primaryBtn">primary button</button>
+        <button id="secondaryBtn">secondary button</button>
+        <h1>purpose and usage</h1>
+        <ul>
+        <li>
+                <b>Defining Variables:</b>
+                   You can define a custom property using the `--` prefix followed by a name of your choice:`
+                   Here, `--primary-color` and `--secondary-color` are custom properties storing a color value. The `:root` selector defines these variables globally, making them accessible anywhere within the document.
+         </li>
+
+             <li> 
+                <b>Using Variables:</b>
+                   Once you've defined variables, you can use them by referencing their names inside the `var()` function:
+                   In this example, the `#primaryBtn and #secondaryBtn` I'd uses the `var()` function to apply the stored color.
+            </li>
+                <li>
+
+                    <b>Dynamic Values and Cascade:</b>
+                    Variables are dynamic and can be changed or overridden later in the stylesheet or within specific elements. They follow the normal cascading rules of CSS, allowing for easy customization and maintenance.
+                </li>
+                <li>
+                <b>Fallback Values:</b>
+                   It's also possible to provide fallback values in case the variable is not defined or not supported in a particular browser:
+                   </li>      
+             
+        </ul>
+      <p> <b>Reusable and Maintainable Code:</b>
+        The primary purpose of the `var()` function is to make CSS more maintainable and reusable by enabling the storage of values in variables. This allows for easier updates and consistency throughout the stylesheet by changing values in one place (the variable definition) instead of finding and modifying multiple instances of the same value.</p>
+          
+</body>
+</html>
