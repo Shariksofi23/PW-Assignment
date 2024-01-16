@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-[1440px] flex justify-center items-center m-auto border-2 h-screen ">
+  <section class="container flex flex-col justify-center items-center h-full px-10 gap-4">  
+    <div class=" my-2 text-center space-y-4">
+    <h1 class="text-3xl">Log In</h1>
+    <p>enter you credentials to access your account</p>
+        <button class="border-2 flex justify-center items-center w-full h-5 p-4 mx-auto "> <img  class="size-7 mx-3" src="https://secure.lobostaffing.com/assets/google_login-d6feb768e1770201ded9635d4422d582.png" alt="img"><span>log in with google</span></button>
+</div>
+<div class="flex  justify-center items-center gap-4 py-4">
+    <div class="w-full lg:w-44 h-[.5px] bg-black "></div>
+    <p>or</p>
+    <div class="w-full lg:w-44 h-[.5px] bg-black"></div>
+</div>
+
+  <div>
+    <form class="flex flex-col items-start justify-start w-full  my-2 ">
+            
+        <label for="email" class="w-80 " >email</label>
+        <input type="email" name="email" id="" placeholder="enter email" class="outline outline[0.3px] w-80 mx-auto   " >
+           
+        
+        <label for="password" class=" flex justify-between w-full "><span>password</span>
+            <span>
+                <a href="#" class="text-sky-800">Forgot password?</a>
+            </span></label>
+    
+        <input type="password" name="" id="" placeholder="password" class="outline outline[0.3px] w-full  " >
+        
+        <div class="bg-blue-400 space-y-4 flex justify-center items-center  w-full  my-3 ">
+        <button type="submit" class="  w-full hover:bg-violet-600">Log In</button>
+        </div>
+    </form>
+  </div>
+<div><p>dont have an account?<b><a href="#">register here</a></p></div>
+    
+</section>
+<div class="hidden lg:block self-end w-[90%] xl:w-auto"><img class="h-[90vh]" src="images/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait_186202-4377.jpg" alt="image"></div>
+</body>
+</html>
