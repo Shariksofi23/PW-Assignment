@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Request Example</title>
+</head>
+<body>
+    <h1>User Names from API</h1>
+    <ul id="user-list"></ul>
+
+    <script>
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Configure it: GET-request for the URL
+        xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+
+        // Set up a function to handle the response
+        xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                // Parse the JSON response
+                var users = JSON.parse(xhr.responseText);
+
+                // Log the user names to the console
+                console.log("User  Names:");
+                users.forEach(function(user) {
+                    console.log(user.name);
+                    // Output the user names to the HTML
+                    var li = document.createElement('li');
+                    li.textContent = user.name;
+                    document.getElementById('user-list').appendChild(li);
+                });
+            } else {
+                console.error('Request failed with status:', xhr.status);
+            }
+        };
+
+        // Handle network errors
+        xhr.onerror = function() {
+            console.error('Network error occurred');
+        };
+
+        // Send the request
+        xhr.send();
+    </script>
+</body>
+</html>
